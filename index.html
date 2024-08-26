@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="organic-50.png" type="image/x-icon">
+    <title>Organic Store</title>
+    <!-- font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS and DaisyUi cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                Poppins: 'Poppins'
+              },
+            }
+          }
+        }
+    </script>
+    <style>
+        .font_poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .banner_bg{
+           background-image: url('images/leaf01.png');
+           background-repeat: no-repeat;  
+           background-size: 65%;
+
+        }
+    </style>
+
+</head>
+<body class="font_poppins">
+    <header class="w-full">
+        <nav class="w-[90%] mt-4 mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a href="" >Home</a></li>
+                        <li><a href="">Everything</a></li>
+                        <li><a href="">Groceries</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                  </div>
+                  <img src="images/logo.png" alt="" class="w-1/2">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="" class="text-lg font-[500]">Home</a></li>
+                    <li><a href="" class="text-lg font-[500]">Everything</a></li>
+                    <li><a href="" class="text-lg font-[500]">Groceries</a></li>
+                    <li><a href="" class="text-lg font-[500]">About</a></li>
+                    <li><a href="" class="text-lg font-[500]">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end items-center font-[500] gap-4 text-xl">
+                  <a href="" class="text-[#6a9739]">$10.00</a>
+                  <i class="fa-solid fa-cart-shopping text-[#6a9739]"></i>
+                  <i class="fa-solid fa-user"></i>
+                </div>
+              </div>
+        </nav>
+
+        <div class="banner_bg  w-full  bg-right-bottom">
+            <div class="bg-[#f9f7f4] w-full h-full bg-opacity-90 py-32">
+                <div class="w-[80%] grid grid-cols-2 items-center justify-between mx-auto ">
+                    <div>
+                        <img src="images/bannerbg.png" alt="" class="w-[90%] h-full">
+                   </div>
+                   <div class="space-y-7 ">
+                        <h3 class="text-xl font-bold">Best Quality Products
+                        </h3>
+                        <h1 class="text-7xl font-[700]">Join The <br> Organic <br> Movement!
+                        </h1>
+                        <p class="w-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+                        <button class="bg-[#6a9739] rounded-lg py-4 px-10  text-white"> <i class="fa-solid fa-cart-shopping text-white mr-2"></i> Shop Now</button>
+                   </div>
+                </div>  
+            </div>                             
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-[#111111] w-full mx-auto ">
+            <div class="w-[90%] text-white grid grid-cols-4 gap-6 py-28 mx-auto">
+                <div class="flex bg-[#333333]  rounded-sm p-10">
+                    <img src="images/shipping.png" alt="" class="w-[80px] h-[70px]">
+                    <div>
+                        <h2>free shipping</h2>
+                        <p>Above $5 Only</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#333333]  rounded-sm p-10">
+                    <img src="images/organic.png" alt="" class="w-[80px] h-[70px]" >
+                    <div>
+                        <h2>Certified Organic </h2>
+                        <p>100% Organic </p>
+                    </div>
+                </div>
+                <div class="flex bg-[#333333]  rounded-sm p-10">
+                    <img src="images/saving.png" alt="" class="w-[80px] h-[70px]">
+                    <div>
+                        <h2>Huge Savings</h2>
+                       <p> At Lowest Price</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#333333]  rounded-sm p-10">
+                    <img src="images/return.png" alt=""  class="w-[55px] h-[60px]">
+                    <div>
+                        <h2>Easy Returns</h2>
+                        <p>No Questions Asked</p>
+                    </div>
+                </div>
+            </div>           
+        </section>
+    </main>
+</body>
+</html>
