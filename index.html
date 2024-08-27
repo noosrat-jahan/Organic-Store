@@ -41,12 +41,18 @@
            background-size: 65%;
 
         }
+        .bg_tomato{
+          background-image: url('images/call.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
     </style>
 
 </head>
 <body class="font_poppins">
     <header class="w-full">
-        <nav class="w-[90%] mt-4 mx-auto">
+        <nav class="w-[90%] mt-4 mx-auto ">
             <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -116,35 +122,181 @@
     <main>
         <section class="bg-[#111111] w-full mx-auto ">
             <div class="w-[90%] text-white grid grid-cols-4 gap-6 py-28 mx-auto">
-                <div class="flex bg-[#333333]  rounded-sm p-10">
-                    <img src="images/shipping.png" alt="" class="w-[80px] h-[70px]">
+                <div class="flex  bg-[#333333]  rounded-sm p-10  space-x-4">
+                    <img src="images/shipping.png" alt="" class="w-[80px] h-[70px] ">
                     <div>
-                        <h2>free shipping</h2>
+                        <h2 class="text-xl font-bold mb-2">free <br> shipping</h2>
                         <p>Above $5 Only</p>
                     </div>
                 </div>
-                <div class="flex bg-[#333333]  rounded-sm p-10">
+                <div class="flex bg-[#333333]  rounded-sm p-10 space-x-4">
                     <img src="images/organic.png" alt="" class="w-[80px] h-[70px]" >
                     <div>
-                        <h2>Certified Organic </h2>
+                        <h2 class="text-xl font-bold mb-2">Certified <br> Organic </h2>
                         <p>100% Organic </p>
                     </div>
                 </div>
-                <div class="flex bg-[#333333]  rounded-sm p-10">
+                <div class="flex bg-[#333333]  rounded-sm p-10 space-x-4">
                     <img src="images/saving.png" alt="" class="w-[80px] h-[70px]">
                     <div>
-                        <h2>Huge Savings</h2>
+                        <h2 class="text-xl font-bold mb-2">Huge <br> Savings</h2>
                        <p> At Lowest Price</p>
                     </div>
                 </div>
-                <div class="flex bg-[#333333]  rounded-sm p-10">
+                <div class="flex bg-[#333333]  rounded-sm p-10 space-x-4">
                     <img src="images/return.png" alt=""  class="w-[55px] h-[60px]">
                     <div>
-                        <h2>Easy Returns</h2>
+                        <h2 class="text-xl font-bold mb-2">Easy <br> Returns</h2>
                         <p>No Questions Asked</p>
                     </div>
                 </div>
             </div>           
+        </section>
+
+        <section class="w-[95%] mx-auto mb-14">
+          <h2 class="text-4xl text-center mt-8 mb-10">About Us</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="space-y-10">
+              <h1 class="text-6xl font-semibold">Tell website visitors who you are and why they should choose your business</h1>
+              <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias earum, tenetur quam repellendus architecto sequi consequatur deserunt illum? Repellat, consequatur quae. Ut, quas distinctio expedita perspiciatis molestias voluptas nam optio unde sunt dolor, quo dicta reiciendis! Alias nostrum tempore blanditiis earum eum autem sapiente voluptatum. Optio sunt perferendis maiores natus!quo dicta reiciendis! Alias nostrum tempore blanditiis earum eum autem sapiente voluptatum. Optio sunt perferendis maiores natus!</p>
+              <button class="bg-[#6a9739] rounded-lg py-4 px-10  text-white"> Find Out More</button>
+            </div>
+            <div>
+              <img src="images/about.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full bg_tomato flex items-center justify-center  h-[450px] relative">
+          <div class="bg-[#0000005e] bg-blend-overlay w-full h-full absolute top-0">
+
+          </div>
+          <div class="text-center space-y-5 z-10">
+            <h1 class="text-5xl font-bold text-white">Insert A call to action
+            </h1>
+            <p class="text-white text-xl w-2/3 mx-auto">think of what you want your visitors to do next maybe they should contact you?</p>
+            <button class="text-white text-lg font-bold border border-gray-100 py-4 px-8 rounded-lg hover:text-white hover:bg-[#8bc54d] hover:border-none transition-all ease-in-out">
+              Get In Touch
+            </button>
+          </div>          
+        </section>
+
+        <section class="text-center bg-[#f8f6f3] py-20">          
+            <h1 class="text-4xl font-semibold mb-10">Best Selling Products</h1>
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-10 w-[90%] mx-auto">
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100  shadow-md">
+                <img src="images/product01.jpg" alt="" class="rounded-xl w-full mb-4">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3  class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>              
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product02.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>                
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product03.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>                 
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product04.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl" class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>                
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product05.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl" class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>                
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product06.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl" class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>             
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product07.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg ">Groceries</p>
+                <h3 class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>               
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+              <div class="py-8 px-10 space-y-4 flex flex-col items-center justify-center bg-white rounded border border-gray-100 shadow-md">
+                <img src="images/product08.jpg" alt="" class="rounded-xl ">
+                <p class="opacity-60 text-lg">Groceries</p>
+                <h3 class="font-semibold text-xl">Assorted Coffee</h3>
+                <div class="space-x-1">
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                  <i class="fa-regular fa-star text-[#facc15] font-bold"></i>
+                </div>              
+                <h4>$35.00</h4>
+                <button class="bg-[#6a9739] rounded-lg py-3 px-8  text-white">  Buy Now <i class="fa-solid fa-cart-shopping text-white ml-2"></i></button>
+              </div>
+            </div>                   
         </section>
     </main>
 </body>
